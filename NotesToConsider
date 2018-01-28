@@ -1,0 +1,45 @@
+import 'aframe';
+import 'aframe-animation-component';
+import 'aframe-particle-system-component';
+import 'babel-polyfill';
+import { Entity, Scene } from 'aframe-react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Widget from './widget.js'
+
+
+const padding = 0.3;
+var popup = false;
+const weatherCard = (
+  <Entity src="google.com/raining" Type="a-img" />
+  <Entity value="raining" />
+)
+const financeCard = (
+  <Entity src="google.com/Money" Type="a-img" />
+  <Entity value="APPLE STOCK DOWN 0.5%" />
+)
+class NewsDashboard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      grid: [{ x: -1, y: 0, z: -3, widgetType: this.state.cardTypes[1]}, { x: 0 + padding, y: 0, z: -3, widgetType: this.state.cardTypes[4] }, { x: 1 + padding*2, y: 0, z: -3 }, { x: -1, y: 1 + padding, z: -3 }, {  x: 0 + padding, y: 1 + padding, z: -3 }, {x: 1 + padding*2, y: 1 + padding, z: -3 }, { x: -1, y: 2 + padding*2, z: -3 }, {  x: 0 + padding, y: 2 + padding*2, z: -3 }, {x: 1 + padding*2, y: 2 + padding*2, z: -3 }],
+      widgetData: [],
+      cardTypes: [weatherCard, newsCard, sportsCard, financeCard]
+  };
+  }
+ generatenewsDashboard() {
+    return this.state.grid.map(function (item, i) {
+      return <Widget key={i}  widgetType={item.widgetType} /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
+    })}
+  render() {
+    const generatenewsDashboard = this.generatenewsDashboard();
+    return (
+      <a-entity rotation={this.props.rot} position={this.props.pos}>
+        {generatenewsDashboard}
+      </a-entity>
+
+    );
+  }
+}
+
+export default NewsDashboard;
