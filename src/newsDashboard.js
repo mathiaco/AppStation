@@ -5,7 +5,7 @@ import 'babel-polyfill';
 import { Entity, Scene } from 'aframe-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Widget from './widget.js'
+import NewsWidget from './newsWidget.js'
 
 
 const padding = 0.3;
@@ -20,7 +20,7 @@ class NewsDashboard extends React.Component {
   }
  generatenewsDashboard() {
     return this.state.grid.map(function (item, i) {
-      return <Widget key={i}  /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
+      return <NewsWidget key={i}  /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
     })}
   render() {
     const generatenewsDashboard = this.generatenewsDashboard();
