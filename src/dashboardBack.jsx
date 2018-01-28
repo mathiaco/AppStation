@@ -94,32 +94,37 @@ class DashboardBack extends React.Component {
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[3].x, y: this.state.grid[3].y + 1, z: this.state.grid[3].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://ucarecdn.com/64efbc5e-3f91-448d-aa2a-ed6e77fd98f3/" rotation=" 0 0" height=".5" width="1" position={{ x: this.state.grid[3].x, y: this.state.grid[3].y + 1.35, z: this.state.grid[3].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[3].x, y: this.state.grid[3].y + 0.8, z: this.state.grid[3].z }} />
+         
+          <Entity primitive="a-text" color="black" height="0.9" width="1.2" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[3].x, y: this.state.grid[3].y + 0.7, z: this.state.grid[3].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="20" value="BitCoin trade price is: " position={{ x: this.state.grid[3].x - 0.5, y: this.state.grid[3].y + 0.75, z: this.state.grid[3].z }} />
+       
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[4].x, y: this.state.grid[4].y + 1, z: this.state.grid[4].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://ucarecdn.com/8df18394-f4d4-4bf7-a556-2004d2dced32/" rotation=" 0 0" height=".5" width="1" position={{ x: this.state.grid[4].x, y: this.state.grid[4].y + 1.35, z: this.state.grid[4].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[4].x, y: this.state.grid[4].y + 0.8, z: this.state.grid[4].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="15" value="Italk" position={{ x: this.state.grid[4].x - 0.5, y: this.state.grid[4].y + 0.9, z: this.state.grid[4].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="20" value="You have 0 new message" position={{ x: this.state.grid[4].x - 0.5, y: this.state.grid[4].y + 0.75, z: this.state.grid[4].z }} />
+
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[5].x, y: this.state.grid[5].y + 1, z: this.state.grid[5].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://ucarecdn.com/6d93bfba-2b65-4f1c-8a1b-81feeceae3cf/" rotation=" 0 0" height=".5" width="1" position={{ x: this.state.grid[5].x, y: this.state.grid[5].y + 1.35, z: this.state.grid[5].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[5].x, y: this.state.grid[5].y + 0.8, z: this.state.grid[5].z }} />
+        
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[6].x, y: this.state.grid[6].y + 1, z: this.state.grid[6].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://tctechcrunch2011.files.wordpress.com/2014/02/bitcoin-perfecthue.jpg?fit=1%2C1" rotation=" 0 0" height="0.5" width="1" position={{ x: this.state.grid[6].x, y: this.state.grid[6].y + 1.35, z: this.state.grid[6].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[6].x, y: this.state.grid[6].y + 0.8, z: this.state.grid[6].z }} />
+         
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[7].x, y: this.state.grid[7].y + 1, z: this.state.grid[7].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://tctechcrunch2011.files.wordpress.com/2014/02/bitcoin-perfecthue.jpg?fit=1%2C1" rotation=" 0 0" height="0.5" width="1" position={{ x: this.state.grid[7].x, y: this.state.grid[7].y + 1.35, z: this.state.grid[7].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[7].x, y: this.state.grid[7].y + 0.8, z: this.state.grid[7].z }} />
+         
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[8].x, y: this.state.grid[8].y + 1, z: this.state.grid[8].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://tctechcrunch2011.files.wordpress.com/2014/02/bitcoin-perfecthue.jpg?fit=1%2C1" rotation=" 0 0" height="0.5" width="1" position={{ x: this.state.grid[8].x, y: this.state.grid[8].y + 1.35, z: this.state.grid[8].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[8].x, y: this.state.grid[8].y + 0.8, z: this.state.grid[8].z }} />
+         
         </a-entity>
         </a-entity>
 
