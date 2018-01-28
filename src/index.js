@@ -40,8 +40,8 @@ class App extends React.Component {
 
         <Entity primitive="a-sky" radius="10" src="#office" />
         <DashboardFront key={1} rot="20 0 0 " pos="0 0 1"/>
-        <NewsDashboard key={12} rot=" 20 70 0" pos="-1.3 0 1.5" />
-        <DashboardBack key={13} rot=" 20 -70 0" pos="1.3 0 1.5" />
+        <NewsDashboard key={12} rot=" 20 70 0" pos="-1.3 0 2.5" />
+        <DashboardBack key={13} rot=" 20 -70 0" pos="1.3 0 2.5" />
 
         <Entity id="box"
           geometry={{ primitive: 'box' }}

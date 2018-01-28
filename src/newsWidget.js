@@ -11,55 +11,55 @@ class NewsWidget extends React.Component {
         super(props);
         this.state = {
             news: [{
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
                 urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
             },
             {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
-                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
-            },
-            {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
                 urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
 
             },
             {
-                title: "NEWS HEAD",
-                description: "DESCRIPTION",
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
+                urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
+
+            },
+            {
+                title: "ERROR FETCHING NEWS",
+                description: "ERROR FETCHING NEWS",
                 urlToImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv"
 
             }]
