@@ -5,7 +5,8 @@ import 'babel-polyfill';
 import { Entity, Scene } from 'aframe-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from './dashboard.js'
+import DashboardFront from './dashboardFront.jsx'
+import DashboardBack from './dashboardBack.jsx'
 import NewsDashboard from './newsDashboard.js'
 
 class App extends React.Component {
@@ -41,9 +42,9 @@ class App extends React.Component {
         <Entity primitive="a-light" type="ambient" color="#445451" />
         <Entity primitive="a-light" type="point" intensity="2" position="2 4 4" />
         <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048" />
-        <Dashboard key={1}  pos="0 0 1"/>
+        <DashboardFront key={1}  pos="0 0 1"/>
         <NewsDashboard key={12} rot=" 0 70 0" pos="0 0 1.5" />
-        <Dashboard key={13} rot=" 0 -70 0" pos="0 0 1.5" />
+        <DashboardBack key={13} rot=" 0 -70 0" pos="0 0 1.5" />
 
         <Entity id="box"
           geometry={{ primitive: 'box' }}
