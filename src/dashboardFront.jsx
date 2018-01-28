@@ -25,19 +25,20 @@ class DashboardFront extends React.Component {
     fetch("http://conu.astuce.media/api/finance/security/details/quote.json?internalSymbol=BTCBTSP").then((result) => {
       return result.json();
     }).then((jsonResult) => {
-      this.setState({ bitcoin: jsonResult })
+      console.log(jsonResult[0].Quote);
+      this.setState({ bitcoin: jsonResult[0] })
     }
       )
     fetch("http://conu.astuce.media/api/finance/security/details/quote.json?internalSymbol=TSLA_XNGS").then((result) => {
       return result.json();
     }).then((jsonResult) => {
-      this.setState({ tesla: jsonResult })
+      this.setState({ tesla: jsonResult[0] })
     }
       )
     fetch("http://conu.astuce.media/api/finance/security/details/quote.json?internalSymbol=EURUSD").then((result) => {
       return result.json();
     }).then((jsonResult) => {
-      this.setState({ EUR: jsonResult })
+      this.setState({ EUR: jsonResult[0] })
     }
       )
 
