@@ -24,6 +24,7 @@ class DashboardFront extends React.Component {
   componentWillMount() {
     fetch("http://conu.astuce.media/api/finance/security/details/quote.json?internalSymbol=BTCBTSP").then((result) => {
       return result.json();
+
     }).then((jsonResult) => {
       console.log(jsonResult[0].Quote);
       this.setState({ bitcoin: jsonResult[0] })
@@ -51,7 +52,7 @@ class DashboardFront extends React.Component {
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[0].x, y: this.state.grid[0].y + 1, z: this.state.grid[0].z - 0.01 }} />
           <Entity primitive="a-plane" src="https://tctechcrunch2011.files.wordpress.com/2014/02/bitcoin-perfecthue.jpg?fit=1%2C1" rotation=" 0 0" height="0.5" width="1" position={{ x: this.state.grid[0].x, y: this.state.grid[0].y + 1.35, z: this.state.grid[0].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.Quote.Trade_price} position={{ x: this.state.grid[0].x, y: this.state.grid[0].y + 0.8, z: this.state.grid[0].z }} />
+          <Entity primitive="a-text" color="black" height="0.2" width="5" value={this.state.bitcoin.Quote.Trade_price} position={{ x: this.state.grid[0].x, y: this.state.grid[0].y + 0.8, z: this.state.grid[0].z }} />
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[1].x, y: this.state.grid[1].y + 1, z: this.state.grid[1].z - 0.01 }} />
