@@ -10,7 +10,7 @@ import Widget from './widget.js'
 
 const padding = 0.3;
 var popup = false;
-class Dashboard extends React.Component {
+class NewsDashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,19 +18,19 @@ class Dashboard extends React.Component {
       widgetData: []
   };
   }
- generateDashboard() {
+ generatenewsDashboard() {
     return this.state.grid.map(function (item, i) {
-      return <Widget key={i} /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
+      return <Widget key={i}  /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
     })}
   render() {
-    const generateDashboard = this.generateDashboard();
+    const generatenewsDashboard = this.generatenewsDashboard();
     return (
       <a-entity rotation={this.props.rot} position={this.props.pos}>
-        {generateDashboard}
+        {generatenewsDashboard}
       </a-entity>
 
     );
   }
 }
 
-export default Dashboard;
+export default NewsDashboard;
