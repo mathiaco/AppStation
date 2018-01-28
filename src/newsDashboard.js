@@ -20,7 +20,8 @@ class NewsDashboard extends React.Component {
   }
  generatenewsDashboard() {
     return this.state.grid.map(function (item, i) {
-      return <NewsWidget key={i}  /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
+      console.log(i)
+      return <NewsWidget key={i} newsNumber={i} /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
     })}
   render() {
     const generatenewsDashboard = this.generatenewsDashboard();

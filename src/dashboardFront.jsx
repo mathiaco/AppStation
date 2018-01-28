@@ -19,19 +19,7 @@ class DashboardFront extends React.Component {
     };
   }
 
-
-  callNews() {
-    fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=69ccb0de73a64ed2b868e8a7f430d4b1")
-      .then((result) => {
-        return result.json();
-      }).then((jsonResult) => {
-        console.log(jsonResult);
-      })
-  }
-
-
   render() {
-    const callNews = this.callNews();
     return (
       <a-entity rotation={this.props.rot} position={this.props.pos}>
           <Entity primitive="a-plane" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[0].x, y: this.state.grid[0].y+1, z: this.state.grid[0].z }} />
@@ -42,11 +30,7 @@ class DashboardFront extends React.Component {
           <Entity primitive="a-plane" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[5].x, y: this.state.grid[5].y+1, z: this.state.grid[5].z }} />
           <Entity primitive="a-plane" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[6].x, y: this.state.grid[6].y+1, z: this.state.grid[6].z }} />
           <Entity primitive="a-plane" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[7].x, y: this.state.grid[7].y+1, z: this.state.grid[7].z }} />
-          <Entity primitive="a-plane" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[8].x, y: this.state.grid[8].y+1, z: this.state.grid[8].z }} />
-
-        
-        {callNews};
-      </a-entity>
+          <Entity primitive="a-plane" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNZeN2-cBHJGkeu5Y5o_km0yQJf01HbeF0hcJlFNTgU4b56tv" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[8].x, y: this.state.grid[8].y+1, z: this.state.grid[8].z }} />      </a-entity>
 
     );
   }
