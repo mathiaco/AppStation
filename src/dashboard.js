@@ -6,6 +6,7 @@ import { Entity, Scene } from 'aframe-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 const padding = 0.3;
+
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
@@ -19,11 +20,23 @@ class Dashboard extends React.Component {
       return <Entity primitive="a-plane" src="#groundTexture" rotation=" 0 0" height="1" width="1" key={i} position={{ x: item.x, y: item.y+1, z: item.z }} />
     })
   }
+
+  callNews(){
+    fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=69ccb0de73a64ed2b868e8a7f430d4b1")
+    .then((result)=> {
+      return result.json();
+    }).then((jsonResult) => {
+      console.log(jsonResult);
+  })
+  }
+
   render() {
     const generateDashboard = this.generateDashboard();
+    const callNews = this.callNews();
     return (
       <a-entity>
         {generateDashboard};
+        {callNews};
       </a-entity>
 
     );
