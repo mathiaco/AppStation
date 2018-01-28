@@ -9,11 +9,8 @@ import Widget from './widget.js'
 
 
 const padding = 0.3;
-<<<<<<< HEAD
 
-=======
 var popup = false;
->>>>>>> origin/master
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +21,6 @@ class Dashboard extends React.Component {
   }
  generateDashboard() {
     return this.state.grid.map(function (item, i) {
-<<<<<<< HEAD
       return <Entity primitive="a-plane" src="#groundTexture" rotation=" 0 0" height="1" width="1" key={i} position={{ x: item.x, y: item.y+1, z: item.z }} />
     })
   }
@@ -38,22 +34,17 @@ class Dashboard extends React.Component {
   })
   }
 
-=======
       return <Widget key={i} /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
     })}
->>>>>>> origin/master
   render() {
     const generateDashboard = this.generateDashboard();
     const callNews = this.callNews();
     return (
-<<<<<<< HEAD
       <a-entity>
         {generateDashboard};
         {callNews};
-=======
       <a-entity rotation={this.props.rot} position={this.props.pos}>
         {generateDashboard}
->>>>>>> origin/master
       </a-entity>
 
     );
