@@ -91,8 +91,7 @@ class NewsWidget extends React.Component {
             <a-entity>
                 <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.props.x, y: this.props.y + 1, z: this.props.z - 0.01 }} />
                 <Entity primitive="a-plane" src={this.state.news[this.props.newsNumber].urlToImage} rotation=" 0 0" height="0.5" width="1" position={{ x: this.props.x, y: this.props.y + 1.35, z: this.props.z }} />
-                <Entity primitive="a-text" color="black" height="0.2" width="1" value={this.state.news[this.props.newsNumber].title} position={{ x: this.props.x - 0.5, y: this.props.y + 1, z: this.props.z }} />
-                <Entity primitive="a-text" color="black" height="0.3" width="1" value={this.state.news[this.props.newsNumber].description} position={{ x: this.props.x - 0.5, y: this.props.y + 0.8, z: this.props.z }} />
+                <Entity primitive="a-text" color="black" height="0.2" width="4" value={this.state.news[this.props.newsNumber].title} position={{ x: this.props.x - 0.5, y: this.props.y + 1, z: this.props.z }} />
 
             </a-entity>
         );
