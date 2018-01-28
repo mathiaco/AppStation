@@ -9,7 +9,6 @@ import Widget from './widget.js'
 
 
 const padding = 0.3;
-
 var popup = false;
 class Dashboard extends React.Component {
   constructor(props) {
@@ -21,10 +20,9 @@ class Dashboard extends React.Component {
   }
  generateDashboard() {
     return this.state.grid.map(function (item, i) {
-      return <Entity primitive="a-plane" src="#groundTexture" rotation=" 0 0" height="1" width="1" key={i} position={{ x: item.x, y: item.y+1, z: item.z }} />
-    })
-  }
-
+      return <Widget key={i} /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
+    })}
+    
   callNews(){
     fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=69ccb0de73a64ed2b868e8a7f430d4b1")
     .then((result)=> {
@@ -34,17 +32,14 @@ class Dashboard extends React.Component {
   })
   }
 
-      return <Widget key={i} /*widgetData={widgetData[i]}*/ x={item.x} y={item.y} z={item.z}/>
-    })}
+      
   render() {
     const generateDashboard = this.generateDashboard();
     const callNews = this.callNews();
     return (
-      <a-entity>
+      <a-entity rotation={this.props.rot} position={this.props.pos}>
         {generateDashboard};
         {callNews};
-      <a-entity rotation={this.props.rot} position={this.props.pos}>
-        {generateDashboard}
       </a-entity>
 
     );
