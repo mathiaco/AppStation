@@ -74,18 +74,22 @@ class DashboardBack extends React.Component {
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[0].x, y: this.state.grid[0].y + 1, z: this.state.grid[0].z }} />
           <Entity primitive="a-plane" src="https://ucarecdn.com/e98a643c-6c75-4b0f-9b85-330ced40b0cb/" rotation=" 0 0" height=".5" width="1" position={{ x: this.state.grid[0].x, y: this.state.grid[0].y + 1.35, z: this.state.grid[0].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="15" value="title" position={{ x: this.state.grid[0].x - 0.5, y: this.state.grid[0].y + 0.9, z: this.state.grid[0].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="20" value="description" position={{ x: this.state.grid[0].x - 0.5, y: this.state.grid[0].y + 0.75, z: this.state.grid[0].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="15" value="Gaming" position={{ x: this.state.grid[0].x - 0.5, y: this.state.grid[0].y + 1, z: this.state.grid[0].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="20" value="New Games that are available on the PSN Platform" position={{ x: this.state.grid[0].x - 0.5, y: this.state.grid[0].y + 0.75, z: this.state.grid[0].z }} />
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[1].x, y: this.state.grid[1].y + 1, z: this.state.grid[1].z  }} />
           <Entity primitive="a-plane" src="https://ucarecdn.com/3f66ea01-bb96-4f76-b42b-c86f57763280/" rotation=" 0 0" height=".5" width="1" position={{ x: this.state.grid[1].x, y: this.state.grid[1].y + 1.35, z: this.state.grid[1].z }} />
           <Entity primitive="a-text" color={this.state.stockPriceColor} height="0.3" width="0.2" value="550k" position={{ x: this.state.grid[1].x-.5, y: this.state.grid[1].y + 0.7, z: this.state.grid[1].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="15" value="Fast Cars" position={{ x: this.state.grid[1].x - 0.5, y: this.state.grid[1].y + 0.9, z: this.state.grid[0].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="20" value="Ferrari's sales drop 20%" position={{ x: this.state.grid[1].x - 0.5, y: this.state.grid[1].y + 0.75, z: this.state.grid[1].z }} />
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[2].x, y: this.state.grid[2].y + 1, z: this.state.grid[2].z  }} />
-          <Entity primitive="a-plane" src="https://ucarecdn.com/ffcc6fdf-adf0-42c9-a0e1-f98ff5dbb0b8/" rotation=" 0 0" height="1.07" width="1" position={{ x: this.state.grid[2].x, y: this.state.grid[2].y + 1.35, z: this.state.grid[2].z }} />
-          <Entity primitive="a-text" color="black" height="0.5" width="10" value={this.state.bitcoin.quote.trade_price} position={{ x: this.state.grid[2].x, y: this.state.grid[2].y + 0.8, z: this.state.grid[2].z }} />
+          <Entity primitive="a-plane" src="https://ucarecdn.com/ffcc6fdf-adf0-42c9-a0e1-f98ff5dbb0b8/" rotation=" 0 0" height="0.5" width="1" position={{ x: this.state.grid[2].x, y: this.state.grid[2].y + 1.35, z: this.state.grid[2].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="15" value="Weather" position={{ x: this.state.grid[2].x - 0.5, y: this.state.grid[2].y + 0.9, z: this.state.grid[2].z }} />
+          <Entity primitive="a-text" color="black" height="0.5" width="1" wrap-count="20" value="It will be 1.94 degrees tonight." position={{ x: this.state.grid[2].x - 0.5, y: this.state.grid[2].y + 0.75, z: this.state.grid[2].z }} />
+
         </a-entity>
         <a-entity>
           <Entity primitive="a-plane" src="https://technologydenmark.dk/wp-content/uploads/2016/03/whitebg.png" rotation=" 0 0" height="1" width="1" position={{ x: this.state.grid[3].x, y: this.state.grid[3].y + 1, z: this.state.grid[3].z - 0.01 }} />
