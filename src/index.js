@@ -35,13 +35,10 @@ class App extends React.Component {
       <Scene>
         <a-assets>
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
-          <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" />
+          <img id="office" src="https://ucarecdn.com/c867b423-f74a-4977-8851-ae3bd92b3ebe/" />
         </a-assets>
 
-        <Entity primitive="a-plane" src="#groundTexture" rotation="-90 0 0" height="100" width="100" />
-        <Entity primitive="a-light" type="ambient" color="#445451" />
-        <Entity primitive="a-light" type="point" intensity="2" position="2 4 4" />
-        <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048" />
+        <Entity primitive="a-sky" radius="10" src="#office" />
         <DashboardFront key={1}  pos="0 0 1"/>
         <NewsDashboard key={12} rot=" 0 70 0" pos="0 0 1.5" />
         <DashboardBack key={13} rot=" 0 -70 0" pos="0 0 1.5" />
