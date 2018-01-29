@@ -1,6 +1,6 @@
 AppStation / ConUHacks 2018 
 
-We created a POC for a VR dashboard that allows you to see the widgets that are related to where you are looking and display data from webAPIs in real-time
+VR dashboard that allows you to see the widgets that are related to where you are looking and display data from webAPIs in real-time
 
 note: Use of VR Mask for enhanced experience. 
 
